@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect
 import requests
 import random
 
+print("hej")
 
 app = Flask(__name__)
 
@@ -42,3 +43,6 @@ def random_book():
     else:
         return "Book not found."
     
+
+if __name__ == "__main__":
+    app.run(debug=True)
